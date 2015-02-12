@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{611C289F-AA38-402E-8449-83545BC71758}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NanoWar</RootNamespace>
+    <AssemblyName>NanoWar</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>d9a2f0f9</NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIFileParser">
+      <HintPath>..\packages\ini-parser.2.1.1\lib\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AI\AI.cs" />
+    <Compile Include="AI\Noob.cs" />
+    <Compile Include="AI\Normal.cs" />
+    <Compile Include="Animation\AnimatedObject.cs" />
+    <Compile Include="Animation\Animator.cs" />
+    <Compile Include="Animation\FrameAnimation.cs" />
+    <Compile Include="Animation\IAnimation.cs" />
+    <Compile Include="Animation\RotateAnimation.cs" />
+    <Compile Include="Animation\ScaleAnimation.cs" />
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="GameClient\GameClient.cs" />
+    <Compile Include="GameClient\Lobby.cs" />
+    <Compile Include="GameClient\RawSerializer.cs" />
+    <Compile Include="GameClient\Structs.cs" />
+    <Compile Include="HelperClasses\PolarVector.cs" />
+    <Compile Include="ParticleSystem\EmitterBase.cs" />
+    <Compile Include="ParticleSystem\IAffector.cs" />
+    <Compile Include="ParticleSystem\Particle.cs" />
+    <Compile Include="ParticleSystem\ParticleSystem.cs" />
+    <Compile Include="Shapes\RoundedRectangle.cs" />
+    <Compile Include="Shapes\SimpleCircle.cs" />
+    <Compile Include="States\GameStateClose\GameStateClose.cs" />
+    <Compile Include="Animation\FadeAnimation.cs" />
+    <Compile Include="States\GameStateFinish\GameStateFinish.cs" />
+    <Compile Include="States\GameStateLobby\GameStateLobby.cs" />
+    <Compile Include="States\GameStateMenu\GameStateMenu.cs" />
+    <Compile Include="States\GameStateMenu\Menu.cs" />
+    <Compile Include="States\GameStateMenu\MenuItem.cs" />
+    <Compile Include="States\GameStateMenu\MenuManager.cs" />
+    <Compile Include="Shapes\Button.cs" />
+    <Compile Include="States\GameStateMultiplayer\GameStateMultiplayer.cs" />
+    <Compile Include="States\GameStateMultiplayer\LoadingAnimation.cs" />
+    <Compile Include="States\GameStateLobby\LobbyPanel.cs" />
+    <Compile Include="States\GameStateMultiplayer\ServerSelector.cs" />
+    <Compile Include="States\GameStateResults\GameStateResults.cs" />
+    <Compile Include="States\GameStateStart\Cell.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="States\GameStateStart\GameMode.cs" />
+    <Compile Include="States\GameStateStart\MultiplayerGame.cs" />
+    <Compile Include="States\GameStateStart\Player.cs" />
+    <Compile Include="States\GameStateStart\ParticleAffector.cs" />
+    <Compile Include="States\GameStateStart\ParticleEmitter.cs" />
+    <Compile Include="States\GameStateStart\RectangleSelection.cs" />
+    <Compile Include="States\GameStateStart\Selector.cs" />
+    <Compile Include="States\GameStateIntro\GameStateIntro.cs" />
+    <Compile Include="States\GameStateStart\GameStateStart.cs" />
+    <Compile Include="HelperClasses\MathHelper.cs" />
+    <Compile Include="States\GameStateStart\SingleplayerGame.cs" />
+    <Compile Include="States\GameStateStart\UnitCell.cs" />
+    <Compile Include="Shapes\Circle.cs" />
+    <Compile Include="Shapes\Line.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="StateMachine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets.xml" />
+    <Content Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assets\Assets.csproj">
+      <Project>{b6ce00ca-b08a-4de4-b4d3-cddb20e1183d}</Project>
+      <Name>Assets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML\SFML.csproj">
+      <Project>{a0adc2b8-ba32-4fa4-9003-9a0ef21ee2ab}</Project>
+      <Name>SFML</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

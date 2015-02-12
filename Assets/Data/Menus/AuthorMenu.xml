@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <font size="80">fonts/bebas_neue</font>
+  <item disabled="true">
+    <link type=""></link>
+    <text>Dominik Baran</text>
+  </item>
+  <item>
+    <link type="menu">menu/main_menu</link>
+    <text>Wróć</text>
+  </item>
+</menu>

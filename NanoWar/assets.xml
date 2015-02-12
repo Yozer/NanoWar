@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<assets>
+
+  <section id="fonts">
+    <font id="verdana" res="NanoWar.Data.Fonts.verdana.ttf" />
+    <font id="bebas_neue" res="NanoWar.Data.Fonts.BebasNeue.otf" />
+  </section>
+
+  <section id="intro">
+    <texture smooth="true" id="nvidia_logo" res="NanoWar.Data.Images.Logos.nvidia_logo.png" />
+    <texture smooth="true" id="dolby_logo" res="NanoWar.Data.Images.Logos.dolby_logo.jpeg" />
+  </section>
+
+  <section id="menu">
+    <menu id="main_menu" res="NanoWar.Data.Menus.MainMenu.xml"></menu>
+    <menu id="options_menu" res="NanoWar.Data.Menus.OptionsMenu.xml"></menu>
+    <menu id="author_menu" res="NanoWar.Data.Menus.AuthorMenu.xml"></menu>
+    <menu id="new_game" res="NanoWar.Data.Menus.NewGameMenu.xml"></menu>
+    <texture smooth="true" id="background" res="NanoWar.Data.Menus.menu_background.jpg"></texture>
+
+    <sound id="background_music" res="NanoWar.Data.Sound.menu_music.wav"></sound>
+    <sound id="click_sound" res="NanoWar.Data.Sound.menu_click_sound.wav"></sound>
+  </section>
+
+  <section id="finish">
+    <sound id="win_music" res="NanoWar.Data.Sound.win_music.wav"></sound>
+    <sound id="lose_music" res="NanoWar.Data.Sound.lose_music.wav"></sound>
+  </section>
+
+  <section id="multiplayer">
+    <texture smooth="true" id="loading" res="NanoWar.Data.Images.loading.png"></texture>
+    <texture smooth="true" id="arrow" res="NanoWar.Data.Images.arrow.png"></texture>
+    <texture smooth="true" id="ok" res="NanoWar.Data.Images.ok.png"></texture>
+  </section>
+
+  <section id="game">
+    <texture smooth="true" id="cell_inside_blue" res="NanoWar.Data.Images.Game.cell_inside_blue.png"></texture>
+    <texture smooth="true" id="cell_inside_green" res="NanoWar.Data.Images.Game.cell_inside_green.png"></texture>
+    <texture smooth="true" id="cell_inside_red" res="NanoWar.Data.Images.Game.cell_inside_red.png"></texture>
+    <texture smooth="true" id="cell_inside_neutral" res="NanoWar.Data.Images.Game.cell_inside_neutral.png"></texture>
+
+    <texture smooth="true" id="unit_cell_blue" res="NanoWar.Data.Images.Game.unit_cell_blue.png"></texture>
+    <texture smooth="true" id="unit_cell_green" res="NanoWar.Data.Images.Game.unit_cell_green.png"></texture>
+    <texture smooth="true" id="unit_cell_red" res="NanoWar.Data.Images.Game.unit_cell_red.png"></texture>
+
+    <texture smooth="true" id="cell_bubble" res="NanoWar.Data.Images.Game.cell_bubble.png"></texture>
+
+    <texture smooth="true" id="particle" res="NanoWar.Data.Images.Game.particle.png"></texture>
+
+    <sound id="background_music" res="NanoWar.Data.Sound.game_music.wav"></sound>
+    <sound id="cell_mouse_hover" res="NanoWar.Data.Sound.cell_mouse_hover.wav"></sound>
+    <sound id="cell_out" res="NanoWar.Data.Sound.cell_out.wav"></sound>
+    <sound id="cell_in" res="NanoWar.Data.Sound.cell_in.wav"></sound>
+    <sound id="unit_cell_explosion" res="NanoWar.Data.Sound.unit_cell_explosion.wav"></sound>
+  </section>
+</assets>

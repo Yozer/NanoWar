@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <font size="80">fonts/bebas_neue</font>
+  <item>
+    <link type="screen"></link>
+    <text>Dominik</text>
+  </item>
+
+  <item>
+    <link type="menu"></link>
+    <text>Dominik</text>
+  </item>
+  
+  <item>
+    <link type="menu">menu/main_menu</link>
+    <text>Wróć</text>
+  </item>
+</menu>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <font size="80">fonts/bebas_neue</font>
+  <item>
+    <link type="menu">menu/new_game</link>
+    <text>Nowa gra</text>
+  </item>
+  <!--
+  <item>
+    <link type="menu">menu/wczytaj_menu</link>
+    <text>Wczytaj grę</text>
+  </item>
+  
+  <item>
+    <link type="menu">menu/options_menu</link>
+    <text>Opcje</text>
+  </item>
+   -->
+  <item>
+    <link type="screen">GameStateResults</link>
+    <text>Wyniki</text>
+  </item>
+  <item>
+    <link type="menu">menu/author_menu</link>
+    <text>Autor</text>
+  </item>
+  
+  <item>
+    <link type="screen">GameStateClose</link>
+    <text>Wyjście</text>
+  </item>
+</menu>
